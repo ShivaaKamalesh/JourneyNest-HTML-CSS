@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Destination.css">
+
+    <style>
+        nav ul {
+            background-color: rgb(39, 38, 38);
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        nav ul li.first {
+            float: right;
+        }
+
+        nav ul li.first a {
+            padding: 15px 16px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            color: rgb(241, 231, 231);
+            font-size: medium;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+            float: left;
+            display: block;
+            padding: 14px 16px;
+            font-size: 20px;
+        }
+
+        /* Remove tick marks in navbar */
+        nav ul li::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <div class="logo"><a href="#logo">JourneyNest 🌿</a></div>
+                <li class="first"><a href="Contact.html">CONTACT</a></li>
+                <li class="first"><a href="About.html">ABOUT</a></li>
+                <li class="first"><a href="Destination.html">DESTINATION</a></li>
+                <li class="first"><a href="Home.html">HOME</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="place">
+        <h2>Our Destination</h2>
+        <div class="valuee">
+        <div class="value">
+            <h2>🌍 International Destinations</h2>
+            <h3>Discover the World's Most Beautiful Places</h3>
+            <p>Travel beyond borders and explore stunning international destinations filled with rich culture, breathtaking landscapes, and unforgettable experiences. Whether you're looking for serene beaches, bustling cities, or historic landmarks, we have the perfect getaway for you!</p>
+            <button><a href="International.html">Button</a></button>
+        </div>
+        <div class="value">
+            <h2>🇮🇳  Indian Destinations</h2>
+            <h3>Incredible India – A Land of Diverse Beauty</h3>
+            <p>From snow-capped mountains to sun-kissed beaches, ancient temples to modern cities, India offers an unforgettable journey for every traveler. Whether you're a nature lover, history enthusiast, or adventure seeker, discover the perfect destination for your next trip!</p>
+            <button><a href="National.html">Button</a></button>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

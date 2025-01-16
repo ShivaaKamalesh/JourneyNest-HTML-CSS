@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #cfe7e5;
+}
+
+
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c6b5f;
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 480px) {
+    /* Adjust section padding for smaller screens */
+    section {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    /* Reduce font sizes for headings */
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    /* Adjust paragraph font size for better readability on phones */
+    p {
+        font-size: 16px;
+    }
+
+    /* Stack navigation items for better usability */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

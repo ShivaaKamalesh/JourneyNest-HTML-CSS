@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #cfe7e5;
+    text-align: center;
+}
+
+
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 30px;
+}
+
+.contact-form, .contact-info {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    min-width: 300px;
+    text-align: left;
+}
+
+.contact-form h2, .contact-info h2 {
+    margin-bottom: 20px;
+    color: #2c6b5f;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: #e68900;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #2c6b5f;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+iframe {
+    border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+    /* Stack contact form and info for better phone layout */
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    /* Adjust form and info box width for phones */
+    .contact-form, .contact-info {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Reduce font size for better readability */
+    .contact-form h2, .contact-info h2 {
+        font-size: 18px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Adjust button size */
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    /* Map container adjustments */
+    .map-container iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Adjust paragraph font size */
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    /* Adjust social link font size */
+    .social-links a {
+        font-size: 14px;
+    }
+}
